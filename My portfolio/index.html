@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>My portfolio</title>
+	<!-- <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+<nav>
+	<div class="flex-box">
+		<ul class="nav-ul">
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a class="" href="#about">About</a></li>
+			<li><a class="" href="#portfolio">Portfolio</a></li>
+			<li><a class="" href="#contact">Contats</a></li>
+		</ul>
+	</div>
+</nav>
+
+ <div id="home" class="section home-flex-box">
+ 	<img src="http://placeimg.com/300/300/animals" alt="">
+ 	<p class="par-title">ПОРТФОЛИО</p>
+ 	<hr>
+ 	<p>HTML5 • CSS3 • Javascript • Photoshop • jQuery • Less • Git • NPM • Vue • Node.js</p>
+ </div>
+ <div id="about" class="section about-flex-box">
+ 	<span class="par-title">ОБО МНЕ</span>
+ 	<hr>
+ 	<p>Сайты выглядят одинаково во всех современных браузерах. Нюансы верстки в IE8, IE7 обсуждаются отдельно, как правило, я следую принципу Graceful degradation.</p>
+ 	<p>•</p>
+ 	<p>Перед сдачей работы заказчику код проверяется валидатором http://validator.w3.org на соответствие стандартам</p>
+  	<p>•</p>
+ 	<p>При верстке макета принимается во внимание, что пункты меню могут быть разной длины и где-то вместо нескольких слов может в дальнейшем находиться несколько предложений.</p>
+ </div>
+ <div id="portfolio" class="section light-bg"></div>
+ <div id="contact" class="section dark-bg"></div>
+ 
+ <footer>
+ 	<div></div>
+ 	<div></div>
+ 	<div></div>
+ </footer>
+
+<script src="node_modules\jquery\dist\jquery.min.js"></script><!-- 
+<script src="node_modules\popper.js\dist\umd\popper.min.js"></script>
+<script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script> -->
+
+<script>
+$(document).ready(function() {
+ 
+ 
+   $("a").click(function() {
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top + "px"
+      }, {
+         duration: 1000,
+         easing: "swing"
+      });
+      return false;
+   });
+ 
+ 
+});
+
+
+
+	(function() {
+  'use strict';
+
+  var section = document.querySelectorAll(".section");
+  var sections = {};
+  var i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
+    }
+  };
+})();
+
+
+$(window).scroll(function(){                              // отслеживаем событие
+   if ( $(window).scrollTop() >= 150 ){                   // ставим условие
+      $('nav').css('height','50px');         // определяем действие
+   }    else {
+   	  $('nav').css('height','100px');
+   }
+});
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
