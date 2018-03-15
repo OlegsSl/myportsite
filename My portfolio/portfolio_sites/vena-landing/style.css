@@ -1,0 +1,712 @@
+ @font-face {
+    font-family: Roboto; /* Гарнитура шрифта */
+    src: url(font/roboto-regular.ttf); /* Путь к файлу со шрифтом */
+ }
+
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+    font-family: Roboto;
+
+}
+
+body {
+}
+
+header {
+	width: 100%;
+	max-width: 1024px;
+	height: 150px;
+
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+	background-color: #80deea;
+
+}
+
+.cantent{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	padding-top: 50px;
+	padding-left: 24px;
+}
+
+header a {
+	padding-top: 65px;
+	float: right;
+}
+
+.fbicon {
+	float: right;
+	padding-right: 24px;
+
+}
+
+// .gplusicon {
+// 	float: right;
+// }
+
+// .vkicon {
+// 	float: right;
+// }
+
+.mainimg {
+	//max-height: 789px;
+	max-width: 1024px;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mainimg img {
+	height: 100%;
+	width: 100%;
+}
+
+.about-up {
+	margin: 0 auto;
+	//max-height: 450px;
+	max-width: 1024px;
+	height: 100%;
+	width: 100%;
+	text-align: center;	
+}
+
+.about-up img {
+	padding: 30px 0px;
+}
+
+.about-up .bigtxt {
+	font-weight: 900;
+	font-size: 60px;
+	color: #274154;
+}
+
+.about-up .smalltxt {
+	font-weight: roboto-regular;
+	font-size: 13px;
+	color: #274154;
+	opacity: 0.5;
+}
+
+
+.block-one {
+	width: 240px;
+	height: 200px;
+	display: inline-block;
+}
+
+.block-two {
+	width: 240px;
+	height: 200px;
+	text-align: center;
+	display: inline-block;
+}
+
+.block-three {
+	width: 240px;
+	height: 200px;
+	text-align: center;
+	display: inline-block;
+}
+
+.block-three img {
+	position: relative;
+	top: -7px;
+}
+
+.about-mid {
+	margin: 0 auto;
+	// max-height: 150px;
+	max-width: 720px;
+	height: 100%;
+	width: 100%;
+}
+
+.about-mid {
+	padding: 30px 0 0 0;
+	font-size: 15px;
+	font-weight: roboto-regular;
+	color: #274154;
+}
+
+
+.phonesimg {
+	position: relative;
+	top: 4px;
+}
+
+.wrapper-white {
+		background-color: white;
+
+}
+
+.why-block {
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.why-txt-one {
+	display: block;
+	color: #274154;
+	font-size: 45px;
+	opacity: 0.8;
+	margin-top: 85px;
+
+}
+
+.why-txt-two {
+	display: block;
+	color: #274154;
+	font-size: 20px;
+	opacity: 0.5;	
+	margin-top: 40px;
+
+}
+
+.why-txt-three {
+	display: block;
+	color: #274154;
+	font-size: 15px;
+	opacity: 1;	
+	margin-top: 30px;
+}
+
+.why-txt-three a {
+	color: blue;
+	text-decoration: none;
+}
+
+
+
+.whyimg-block {
+	margin: 0 auto;
+	max-width: 1024px;
+	height: 100%;
+	width: 100%;
+	text-align: center;	
+}
+
+.plusimg {
+	padding: 30px 0px;
+}
+
+.whyimg-block .bigtxt {
+	font-weight: 900;
+	font-size: 60px;
+	color: #274154;
+}
+
+.whyimg-block .smalltxt {
+	font-weight: roboto-regular;
+	font-size: 13px;
+	color: #274154;
+	opacity: 0.5;
+}
+
+
+.whyimgtxt-one {
+	width: 240px;
+	height: 200px;
+	display: inline-block;
+}
+
+.whyimgtxt-two {
+	width: 240px;
+	height: 200px;
+	text-align: center;
+	display: inline-block;
+}
+
+.whyimgtxt-three {
+	width: 240px;
+	height: 200px;
+	text-align: center;
+	display: inline-block;
+}
+
+
+.whyimg-block .why-bigtxt {
+	font-weight: 900;
+	font-size: 45px;
+	color: #274154;
+}
+
+.whyimg-block .why-smalltxt {
+	font-weight: roboto-regular;
+	font-weight: 600;
+	font-size: 13px;
+	color: #ff4081;
+	opacity: 1;
+}
+
+
+
+
+.wrapper-gray {
+	background-color: #eceff1;
+}
+
+.terms-block {
+	margin: 0 auto;
+	max-width: 720px;
+	width: 100%;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #cfd2d4;
+}
+
+.terms-txt-one {
+	text-align: center;
+	display: block;
+	color: #274154;
+	font-size: 45px;
+	opacity: 0.8;
+	padding-top: 85px;
+}
+
+.terms-txt-two {
+	display: block;
+	color: #274154;
+	font-size: 15px;
+	opacity: 1;
+}
+
+.terms-txt-two p{
+	font-size: 13px;
+}
+
+.terms-txt-two a{
+	text-decoration: none;
+	color: blue;
+}
+
+// .terms-txt-two::before {
+//  content: "";
+//  display: block;
+//  background: url("images/noteic.png") no-repeat;
+//  width: 20px;
+//  height: 20px;
+// }
+
+ul li {
+	padding-bottom: 25px;
+	list-style: none;
+}
+
+li:before{
+	 content: "";
+ display: inline-block;
+ background: url("images/noteic.png") no-repeat;
+ width: 18px;
+ height: 22px;
+ padding: 0 30px 0 0;
+ top: 6px;
+ position: relative;
+}
+
+ul li p {
+	padding: 0 0 0 47px;
+}
+
+
+
+
+
+footer {
+
+	background-color: #eceff1;
+}
+
+.footer-block {
+
+	margin: 0 auto;
+	max-width: 720px;
+	width: 100%;
+	text-align: center;
+	padding-top: 40px;
+}
+
+footer p {
+	text-align: center;
+	font-size: 12px;
+	opacity: 0.5;
+	color: #274154;
+	padding: 25px 0;
+}
+
+
+.line {
+	margin: 0 auto;
+	max-width: 720px;
+	width: 100%;
+	height: 100px;
+	border-top: 1px solid #a1e7ef;
+
+}
+
+
+.line span {
+	font-size: 24px;
+	opacity: 0.5;
+	color: #274154;
+	position: relative;
+	top: 45px;
+	left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  display: block;
+  overflow: hidden;
+  border-radius: 2px;
+  height: 36px;
+  width: 117px;
+  margin: 12px 0 0px 0px;
+  position: relative;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+  transition: background-color .3s;
+}
+
+.btn {
+    transition: 0.3s ease-in-out ;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 190%;
+  padding-top: 190%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.btn {
+	background-color: #ff4081; /*просто цвет*/
+    color: white; /*Цвет текста в кнопке*/
+    font-weight: normal;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #ff1263; /*При наведении*/
+}
+
+
+.btn:before {
+    background-color: #fe9dbe; /*Эффект при нажатии*/
+}
+
+
+/*Убрать синую обводку у кнопки при нажатии*/
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-white {
+	background-color: #ececec; /*просто цвет*/
+    color: gray; /*Цвет текста в кнопке*/
+    font-weight: normal;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.btn-white:hover, .btn-white:focus {
+    background-color: lightgray; /*При наведении*/
+}
+
+
+.btn-white:before {
+    background-color: white; /*Эффект при нажатии*/
+}
+
+.btn-white {
+  display: block;
+  overflow: hidden;
+  border-radius: 2px;
+  height: 36px;
+  width: 194px;
+  position: relative;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+  transition: background-color .3s;
+}
+
+.btn-white {
+    transition: 0.3s ease-in-out ;
+}
+
+.btn-white:hover {
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-white > * {
+  position: relative;
+}
+
+.btn-white:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-white:active:before {
+  width: 190%;
+  padding-top: 190%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+
+
+
+
+.btn-blue {
+	background-color: #2196f3; /*просто цвет*/
+    color: white; /*Цвет текста в кнопке*/
+    font-weight: normal;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    background-color: #1976d2; /*При наведении*/
+}
+
+
+.btn-blue:before {
+    background-color: #42a5f5; /*Эффект при нажатии*/
+}
+
+
+.btn-blue {
+  display: block;
+  overflow: hidden;
+  border-radius: 2px;
+  height: 36px;
+  width: 194px;
+  position: relative;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+  transition: background-color .3s;
+}
+
+.btn-blue {
+    transition: 0.3s ease-in-out ;
+}
+
+.btn-blue:hover {
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-blue > * {
+  position: relative;
+}
+
+.btn-blue:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-blue:active:before {
+  width: 190%;
+  padding-top: 190%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.about-bottom-bluebtn {
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-blue-big {
+	background-color: #2196f3; /*просто цвет*/
+    color: white; /*Цвет текста в кнопке*/
+    font-weight: normal;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.btn-blue-big:hover, .btn-blue-big:focus {
+    background-color: #1976d2; /*При наведении*/
+}
+
+
+.btn-blue-big:before {
+    background-color: #42a5f5; /*Эффект при нажатии*/
+}
+
+
+.btn-blue-big {
+  display: block;
+  overflow: hidden;
+  border-radius: 2px;
+  height: 46px;
+  width: 194px;
+  position: relative;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+  transition: background-color .3s;
+}
+
+.btn-blue-big {
+    transition: 0.3s ease-in-out ;
+}
+
+.btn-blue-big:hover {
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-blue-big > * {
+  position: relative;
+}
+
+.btn-blue-big:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-blue-big:active:before {
+  width: 190%;
+  padding-top: 190%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.about-bottom-bluebtn {
+	margin: 0 auto;
+}

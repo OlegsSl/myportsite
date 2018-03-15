@@ -23,6 +23,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	transition: 0.5s;
+	z-index: 999;
 }
 
 
@@ -111,7 +112,6 @@ a {
 	height: 1px;
     width: 218px;
     background-color: white;
-    margin-top: 25px;
 }
 
 .par-title {
@@ -144,7 +144,83 @@ a {
   background-color: #343a40;
   height: 500px;
   width: 100%;
+  padding: 50px 0;
 }
+
+#portfolio hr {
+	height: 1px;
+    width: 218px;
+    background-color: white;
+    margin:0 15px;	
+}
+
+.prevcard {
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.divt {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+}
+.hover-img{
+	position: relative;
+	transition: 1s;
+	margin: 25px;
+	border-radius: 5px;
+}
+
+.divt img {
+	text-align: center;
+	opacity: 0;
+    position: relative;
+    /*font-size: 48px;*/
+    width: 300px;
+    transition: 1s;
+}
+
+
+.hover-img:hover .divt {
+	opacity: 0.5;
+	background-color: #f8f9fa;
+	transition: 1s;
+}
+
+.hover-img:hover .divt img {
+	opacity: 0.5;
+	background-color: black;
+	transition: 1s;
+}
+
+.portfolio-flex-box2 {
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.portfolio-flex-box {
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#portfolio span {
+	color: white;
+}
+
+
+
+
+
+
 
 #contact {
   background-color: #f8f9fa;
