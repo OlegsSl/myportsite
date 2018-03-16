@@ -26,7 +26,7 @@
  	<img src="http://placeimg.com/300/300/animals" alt="">
  	<p class="par-title">ПОРТФОЛИО</p>
  	<hr>
- 	<p>HTML5 • CSS3 • Javascript • Photoshop • jQuery • Less • Git • NPM • Vue • Node.js</p>
+ 	<p>HTML5 • CSS3 • Javascript • Photoshop • Jira • jQuery • Less • Git • NPM • Vue • Node.js</p>
  </div>
 
  <div id="about" class="section about-flex-box">
@@ -70,25 +70,68 @@
 </div>
 
  </div>
- <div id="contact" class="section dark-bg"></div>
+ <div id="contact" class="section dark-bg contact-flex-box">
+    <span class="par-title">КОНТАКТЫ</span>
+    <hr>
+    <p><a href="mailto:Sluscenkovs@gmail.com">Email: Sluscenkovs@gmail.com</a></p>
+    <p class="point">•</p>
+    <p><a href="tel:+37129789584">Phone: +371 29789584 </a></p>
+    <p class="point">•</p>
+    <p><a href="skype:effect?call">Skype: Effectsq</a></p>
+   </div>
+ </div>
  
- <footer>
- 	<div></div> 
-  <div></div>
- 	<div></div>
+ <footer class="footer-flex-box">
+
+ 	<div class="fd">
+    <span>РАСПОЛОЖЕНИЕ</span>
+        <br>LATVIA<br>Riga
+  </div> 
+
+
+
+  <div class="fd">
+   <!--  <span>SKYPE</span> -->
+
+<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+
+<div id="SkypeButton_Call_effectsq_1">
+   <script type="text/javascript">
+   Skype.ui({
+   "name": "chat",
+   "element": "SkypeButton_Call_effectsq_1",
+   "participants": ["effectsq"],
+   "imageSize": 32
+   });
+   </script>
+</div>
+
+  </div> 
+
+
+  <div class="fd">
+    <span>КОНТАКТЫ</span>
+        <br>Email: Sluscenkovs@gmail.com
+        <br>Phone: +371 29789584
+        <br>Skype: Effectsq
+  </div>
+
  </footer>
+
+ <div class="endof"></div>
 
 <script src="node_modules\jquery\dist\jquery.min.js"></script><!-- 
 <script src="node_modules\popper.js\dist\umd\popper.min.js"></script>
 <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script> -->
 
 <script>
+
 $(document).ready(function() {
  
  
    $("a").click(function() {
       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top + "px"
+         scrollTop: $($(this).attr("href")).offset().top + 1 + "px"
       }, {
          duration: 1000,
          easing: "swing"
@@ -135,14 +178,6 @@ $(window).scroll(function(){                              // отслежива�
 
 
 
-
-
-
-
-
-
 </script>
-
-
 </body>
 </html>
